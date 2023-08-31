@@ -20,7 +20,6 @@ $sql = "INSERT into databaseName.output(id,command,result) values ('" . substr($
 
 //echo $sql;
 $result = $conn->query($sql);
-echo $result
 $conn->close();
 
 ?>
