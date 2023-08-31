@@ -16,7 +16,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT into tech_galaxy_net.output(id,command,result) values ('" . substr($chipId,0,100) . "','" . subStr($theCmd,0,100) . "','" . subStr($theResult,0,100) . "')";
+$sql = "INSERT into databaseName.output(id,command,result) values ('" . substr($chipId,0,100) . "','" . subStr($theCmd,0,100) . "','" . subStr($theResult,0,100) . "')";
 
 //echo $sql;
 $result = $conn->query($sql);
