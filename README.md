@@ -1,13 +1,14 @@
 # IoT_http_host
 Host for IoT_ESP8266 project
 
+## index.php
+* Return all ESP IDs, settings, and most recent inserts
+
 ## control.php
-* GET request returns string of settings given ESP ID /control.php?chipid=123456
+* Return ESP8266 settings with GET /control.php?chipid=123456
 
 ## data.php
-* GET request inserts to chipid, cmd, and data to output table : /data.php?chipid=123456&cmd=analogReadA0&data=10 
+* Insert chipid, cmd, and data to output table with GET /data.php?chipid=123456&cmd=analogReadA0&data=10 
 
 #### TODO
-* index.php dashboard to return all ESP IDs, settings, and most recent inserts
-
-* command.sh interval loop to read database and respond to output, updating control.php commands, sending message or updating statuses on index.php
+* command.sh interval loop to read database, process data to inform action, respond to output: update ESP8266 settings, update status on index.php, send notification
