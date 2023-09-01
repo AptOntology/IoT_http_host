@@ -43,6 +43,8 @@ if ($result->num_rows > 0) {
    echo $row["id"];
    echo " | ";
    echo $row["command"];
+   echo " | ";
+   echo $row["result"];
    echo "</p>";
   }
 }
