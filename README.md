@@ -9,6 +9,3 @@ Host for IoT_ESP8266 project
 
 ## data.php
 * Insert chipid, cmd, and data to output table with GET /data.php?chipid=123456&cmd=analogReadA0&data=10 
-
-#### TODO
-* command.sh interval loop to read database, process data to inform action, respond to output: update ESP8266 settings, update status on index.php, send notification
